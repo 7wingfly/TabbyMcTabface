@@ -1,0 +1,40 @@
+<html>
+<head>
+    <!-- default stuff -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TabbyMcTabface example 2</title>
+    <link rel="stylesheet" href="example.css">
+
+    <!-- prerequisites  -->    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- TabbyMcTabface stuff -->
+    <script src="../tmtf.jquery.js"></script>
+    <link rel="stylesheet" href="../tmtf.css">
+
+    <script type="text/javascript">
+        
+        $(document).ready(function () {
+            
+            $('#tab').tabbyMcTabface([
+                { title: "Tab One", selectedColor: "red", unselectedColor: "black", closeable: true },
+                { title: "Tab Two", closeable: true, selected: true },
+                { title: "Tab Three", selectedColor: "yellow", closeable: true },
+                { title: "Tab Four", unselectedColor: "black", closeable: true }
+            ]);
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <h1>TabbyMcTabFace Example 2</h1>
+
+    <div id="tab">              
+    </div>
+
+</body>
+</html>

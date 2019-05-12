@@ -1,0 +1,86 @@
+:root {
+    --TransparentBlack: rgba(62, 62, 62, 0.37);
+    --SolidBlack: #242424;
+    --ControlForeground: #ddd;
+    --BorderColor: #4b4b4b;
+    --FocusColor: #725995;
+    --HoverColor: #4b99ff;
+    --FinderItemRowCount: 5;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(19, 16, 20);
+    cursor: unset;
+    user-select: none;
+    margin: 0px;
+    color: whitesmoke;
+}
+/* 
+button:focus,
+input:focus,
+select {
+    outline: none !important;
+}
+
+button,
+input {
+    margin-top: 12px;
+    margin-right: 12px;
+    border-radius: 25px;
+    float: right;
+    border: 2px solid var(--BorderColor);
+    height: 35px;
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: var(--SolidBlack);
+    color: var(--ControlForeground);
+    min-width: 70px;
+    user-select: none;
+}
+
+button:hover {
+    border: 2px solid var(--HoverColor);
+}
+
+input::placeholder {
+    font-style: italic;
+}
+
+select option {
+    background-color: var(--SolidBlack);
+}
+
+ul {
+    padding: 0px;
+}
+
+li {
+    display: list-item;
+    list-style: none;
+    list-style-type: none;
+}      
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #101010;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #101010;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #232323;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--HoverColor);
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #101010;
+} */

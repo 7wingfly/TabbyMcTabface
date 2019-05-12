@@ -1,0 +1,110 @@
+/*TabbyMcTabface Version 1.0*/
+/*Written by Benjamin Watkins*/ 
+/*watkins.ben@gmail.com*/ 
+
+.TabbyMcTabface {
+    position: relative;    
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+
+    .TabbyMcTabface .TabHeaderContainer {
+        height: 30px;
+        border-bottom: 2px solid #ff6a00;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+        .TabbyMcTabface .TabHeaderContainer .TabHeader {
+            transition: border-bottom-color 0.2s ease;
+            top: 0px;
+            cursor: pointer;
+            position: relative;
+            height: 22px;            
+            background-color: transparent;
+            float: left;
+            margin-left: 5px;
+            border-bottom: 10px solid #2c2c2c;                 
+        }
+
+            .TabbyMcTabface .TabHeaderContainer .TabHeader:hover {
+                border-color: #ff6a00;
+            }
+
+                .TabbyMcTabface .TabHeaderContainer .TabHeader:hover > .TabHeaderTitle {
+                    color: white;
+                }
+
+                .TabbyMcTabface .TabHeaderContainer .TabHeader:hover > .TabHeaderBtnClose {
+                    opacity: 1 !important;
+                }
+
+            .TabbyMcTabface .TabHeaderContainer .TabHeader .TabHeaderTitle, .TabbyMcTabface .TabHeaderContainer .TabHeader p {
+                position: relative;
+                transition: color 0.2s ease;
+                color: #b9b9b9;
+                font-size: 9pt;
+                float: left;
+                width: calc(100%);
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: clip;     
+                padding-left: 5px;                     
+            }
+
+            .TabbyMcTabface .TabHeaderContainer .TabHeader .TabHeaderBtnClose {
+                -webkit-border-radius: 100px !important;
+                -moz-border-radius: 100px !important;
+                width: 15px !important;
+                height: 15px !important;
+                max-width: 15px !important;
+                max-height: 15px !important;
+                min-width: 15px !important;
+                min-height: 15px !important;
+                transition: opacity, color, background-color 0.2s ease;
+                background-color: rgba(0, 0, 0, 0.2) !important;
+                color: #b9b9b9 !important;
+                border: 0px !important;
+                padding: 0 !important;
+                padding-bottom: 3px !important;
+                line-height: 10% !important;
+                font-size: 15px !important;
+                opacity: 0 !important;
+                position: absolute !important;
+                bottom: -6px !important;
+                right: 3px !important;
+            }
+
+                .TabbyMcTabface .TabHeaderContainer .TabHeader .TabHeaderBtnClose:hover {
+                    background-color: rgba(255, 0, 0, 0.7) !important;
+                    color: white !important;
+                }
+
+        .TabbyMcTabface .TabHeaderContainer .SelectedTab {
+            border-color: #ff6a00;
+        }
+
+            .TabbyMcTabface .TabHeaderContainer .SelectedTab > .TabHeaderTitle {
+                color: white;
+            }
+
+    .TabbyMcTabface .TabPageContainer {
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        height: calc(100% - 32px);
+        white-space: nowrap;
+        font-size: 0px;
+    }
+
+        .TabbyMcTabface .TabPageContainer .TabPage {         
+            overflow: auto;
+            font-size: 1em;
+            width: 100%;
+            height: 100%;            
+            display: inline-block;          
+            vertical-align: top;
+            white-space: initial;
+            font-size: initial;
+        }
